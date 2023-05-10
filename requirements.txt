@@ -1,3 +1,4 @@
 uvicorn[standard]
 typing
 fastapi
+spacy
