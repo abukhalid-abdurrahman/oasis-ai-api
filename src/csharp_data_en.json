@@ -59,6 +59,69 @@
             "source": "int a = 10;\nint b = 20;\nint c = a + b;\nConsole.WriteLine($\"Addition result: {c}\")",
             "partially": true,
             "params": null
+        },
+        {
+            "id": 7,
+            "query": "Create a hello world code using C#.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 8,
+            "query": "Create a hello world program using C#.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 9,
+            "query": "Create a hello world program on C#.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 10,
+            "query": "Create a hello world program on csharp.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 11,
+            "query": "Create a hello world program using csharp.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 12,
+            "query": "Write a hello world program using csharp.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 13,
+            "query": "Write a hello world program on csharp.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 14,
+            "query": "Please, create C# program, that writes hello world to console.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 15,
+            "query": "Create C# program, that writes hello world to console, please",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
         }
     ]
 }
