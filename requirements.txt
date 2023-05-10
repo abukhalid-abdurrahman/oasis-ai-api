@@ -1,4 +1,4 @@
-uvicorn[standard]
-typing
 fastapi
+uvicorn
+typing
 spacy

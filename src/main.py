@@ -5,6 +5,7 @@ sys.path.insert(0, 'pkg/oasis_ai')
 from pkg.oasis_ai.command_analyzer import CommandAnalyzer
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 class Command(BaseModel):
@@ -18,6 +19,8 @@ class Ping(BaseModel):
 
 commandAnalyzer = CommandAnalyzer()
 app = FastAPI()
+
+app.mount("/", StaticFiles(directory="public", html=True))
 
 @app.get("/api/ping")
 async def ping() -> Ping:
