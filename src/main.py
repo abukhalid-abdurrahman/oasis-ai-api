@@ -20,8 +20,6 @@ class Ping(BaseModel):
 commandAnalyzer = CommandAnalyzer()
 app = FastAPI()
 
-app.mount("/", StaticFiles(directory="public", html=True))
-
 @app.get("/api/ping")
 async def ping() -> Ping:
     return Ping(msg="pong")
@@ -34,3 +32,5 @@ async def execute_cmd(cmd: Command) -> Answer:
         return Answer(answer_text=query_result)
     except Exception:
         return Answer(answer_text="Ooops... Sorry, I can't handle your query!")
+
+app.mount("/", StaticFiles(directory="public", html=True))
