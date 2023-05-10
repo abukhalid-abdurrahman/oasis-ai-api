@@ -1,0 +1,64 @@
+{
+    "metadata": {
+        "naturalLanguage": "en-US",
+        "datapointsCount": 100,
+        "languageName": "csharp",
+        "languageShortName": "c#",
+        "targetFramework": 6,
+        "csharpVersion": 11
+    },
+    "data": [
+        {
+            "id": 1,
+            "query": "Write hello world program on C#.",
+            "source": "Console.WriteLine(\"Hello, World!\");",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 2,
+            "query": "Write a program, thats output {0}, on C#.",
+            "source": "Console.WriteLine({0});",
+            "partially": false,
+            "params": [
+                {
+                    "idx": 0,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "query": "Write a C# fuction, that outputs a string given from an arguments.",
+            "source": "void Output(string str)\n{\n\tConsole.WriteLine(str);\n}",
+            "partially": true,
+            "params": null
+        },
+        {
+            "id": 4,
+            "query": "Throw an exception of type {0}, on C#.",
+            "source": "throw new {0}();",
+            "partially": true,
+            "params": [
+                {
+                    "idx": 0,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "query": "Write a C# program to add two numbers.",
+            "source": "int a = 10;\nint b = 20;\nint c = a + b;\nConsole.WriteLine($\"Addition result: {c}\")",
+            "partially": false,
+            "params": null
+        },
+        {
+            "id": 6,
+            "query": "Write a C# program to add two numbers.",
+            "source": "int a = 10;\nint b = 20;\nint c = a + b;\nConsole.WriteLine($\"Addition result: {c}\")",
+            "partially": true,
+            "params": null
+        }
+    ]
+}
