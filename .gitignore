@@ -161,4 +161,4 @@ cython_debug/
 
 .space
 
-!public/dist
+!dist
