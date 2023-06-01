@@ -159,11 +159,26 @@ document.addEventListener('DOMContentLoaded', function () {
     formSendMessage.addEventListener('submit', e => {
       e.preventDefault();
       if (messageInput.value) {
-        // Create a div and add a class
-        let renderMsg = document.createElement('div');
-        renderMsg.className = 'chat-message-text mt-2';
-        renderMsg.innerHTML = '<p class="mb-0">' + messageInput.value + '</p>';
-        document.querySelector('li:last-child .chat-message-wrapper').appendChild(renderMsg);
+        const chatMessageContainer = document.getElementById("chat-message-container");
+
+        chatMessageContainer.insertAdjacentHTML('beforeend',
+          `
+          <li class="chat-message chat-message-right">
+            <div class="d-flex overflow-hidden">
+              <div class="chat-message-wrapper flex-grow-1">
+                <div class="chat-message-text">
+                  <p class="mb-0">${messageInput.value}</p>
+                </div>
+              </div>
+              <div class="user-avatar flex-shrink-0 ms-3">
+                <div class="avatar avatar-sm">
+                  <img src="./assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" />
+                </div>
+              </div>
+            </div>
+          </li>
+          `);
+
         messageInput.value = '';
         scrollToBottom();
       }
